@@ -1,4 +1,6 @@
-
+interface adalah antarmuka.Secara umum, interface berfungsi sebagai penghubung antara sesuatu yang ‘abstrak’ dengan sesuatu yang nyata.
+code : 
+buat class baru di dalam <default package> dengan nama Phone dan isi kodenya seperti ini:
 public interface Phone {
     int MAX_VOLUME = 100;
     int MIN_VOLUME = 0;
@@ -8,7 +10,7 @@ public interface Phone {
     void volumeUp();
     void volumeDown();
 }
-
+buat lagi class baru dengan nama PhoneUser dan isi kodenya seperti ini:
 public class PhoneUser {
     
     private Phone phone;
@@ -33,7 +35,8 @@ public class PhoneUser {
         this.phone.volumeDown();
     }
 }
-
+Berikutnya kita akan membuat class implementasi dari interface Phone.
+Silahkan buat class baru dengan nama Xiaomi, kemudian isi kodenya seperti ini:
 public class Xiaomi implements Phone {
  
     private int volume;
@@ -92,7 +95,7 @@ public class Xiaomi implements Phone {
     }
  
 }
-
+Terakhir, buatlah class Main dengan isi sebagai berikut:
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
